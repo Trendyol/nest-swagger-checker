@@ -1,0 +1,58 @@
+{
+  "scopes": {
+    "file": {
+      "pathPattern": "src/**/*.ts"
+    },
+    "endpoint": {
+      "information": {
+        "check": true,
+        "summary": {
+          "check": true,
+          "checkEmpty": true,
+          "pattern": null
+        },
+        "description": {
+          "check": true,
+          "checkEmpty": true,
+          "pattern": null
+        }
+      },
+      "body": {
+        "check": true,
+        "description": {
+          "check": true,
+          "pattern": "^[A-Z][a-z]*(?:\\s[a-z]*)*$"
+        },
+        "example": {
+          "check": false
+        },
+        "type": {
+          "check": false
+        }
+      },
+      "query": {
+        "check": true,
+        "description": {
+          "check": true,
+          "pattern": "^[A-Z][a-z]*(?:\\s[a-z]*)*$"
+        },
+        "example": {
+          "check": false
+        },
+        "type": {
+          "check": false
+        }
+      },
+      "params": {
+        "check": true,
+        "description": {
+          "check": true,
+          "pattern": "^[A-Z][a-z]*(?:\\s[a-z]*)*$"
+        },
+        "example": {
+          "check": true
+        }
+      }
+    }
+  }
+}

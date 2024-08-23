@@ -1,0 +1,53 @@
+{
+  "name": "@trendyol/nest-swagger-checker",
+  "version": "1.0.0",
+  "description": "Package To Check Swagger Related Fields For NestJS",
+  "main": "./dist/main.js",
+  "exports": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup --publicDir"
+  },
+  "bin": {
+    "nest-swagger-checker": "cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trendyol/nest-swagger-checker.git"
+  },
+  "author": {
+    "name": "Trendyol Tech",
+    "url": "https://github.com/Trendyol"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Trendyol/nest-swagger-checker/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "tsup": {
+    "entry": [
+      "lib",
+      "config.json"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "dts": true,
+    "clean": true
+  },
+  "homepage": "https://github.com/Trendyol/nest-swagger-checker#readme",
+  "dependencies": {
+    "ramda": "^0.30.0",
+    "ts-morph": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/ramda": "^0.30.0",
+    "tsup": "^8.0.2"
+  }
+}
