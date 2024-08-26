@@ -1,0 +1,17 @@
+name: Security
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+    types: [opened, reopened, synchronize]
+  workflow_dispatch:
+
+jobs:
+  security-gates:
+    uses: Trendyol/security-actions/.github/workflows/security-gates.yml@master
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
