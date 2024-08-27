@@ -1,0 +1,29 @@
+name: Release
+
+on:
+  workflow_call:
+    secrets:
+      TRENDYOL_JS_NPM_TOKEN:
+        required: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Set Node env
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: npm ci
+      - name: Run build
+        run: npm run build
+      - name: Publish
+        run: npx semantic-release@20
+        env:
+          NPM_TOKEN: ${{ secrets.TRENDYOL_JS_NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
