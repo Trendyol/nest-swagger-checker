@@ -48,6 +48,7 @@
   "devDependencies": {
     "@types/node": "^20.12.7",
     "@types/ramda": "^0.30.0",
-    "tsup": "^8.0.2"
+    "tsup": "^8.0.2",
+    "semantic-release": "^21.0.2"
   }
 }
