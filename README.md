@@ -1,3 +1,5 @@
+
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Trendyol/nest-swagger-checker/badge)](https://scorecard.dev/viewer/?uri=github.com/Trendyol/nest-swagger-checker)
 # nest-swagger-checker
 nest-swagger-checker is a package that validate some specifications about Swagger/OpenApi in NestJs projects.
 
