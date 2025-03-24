@@ -34,7 +34,7 @@ export class Order {
 
   /* nsc checks example, description and type properties in @ApiProperty decorator
   according to your config options. For example this basketId property does not have
-  description. So, it will log a warning to termianl when we run nest-swagger-checker */
+  description. So, it will log a warning to terminal when we run nest-swagger-checker */
   @ApiProperty({ example: '44c4b0ae-1397-11eb-adc1-0242ac120002' })
   basketId: string;
 
